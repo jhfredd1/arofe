@@ -1,0 +1,418 @@
+	<!DOCTYPE html>
+	<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description"
+		content="AROFE Café: café colombiano de especialidad desde nuestras montañas hasta tu taza.">
+		<title>AROFE Café | Desde nuestras montañas hasta tu taza</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+		href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="estilos.css">
+		<link href="img/favicon.ico" rel="icon">
+	</head>
+
+	<body>
+		<header id="siteHeader">
+			<div class="container nav">
+				<a class="brand" href="#inicio" aria-label="AROFE inicio">Arofe</a>
+				<button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+				<nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+					<a href="#inicio">Inicio</a>
+					<a href="#esencia">Nuestra esencia</a>
+					<a href="#diferenciales">Diferenciales</a>
+					<a href="#productos">Productos</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+				<div class="nav-actions" id="navActions">
+					<button class="btn-outline btn-small" data-modal="loginModal">Iniciar sesión</button>
+					<button class="btn btn-small" data-modal="registerModal">Registrarse</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero" id="inicio">
+				<div class="container hero-content">
+					<div class="hero-brand">
+						<img class="hero-logo" src="img/logo.png" alt="AROFE - Desde nuestras montañas hasta tu taza"
+						onerror="this.style.display='none'">
+						<a class="btnLogo" href="#productos">Haz tu pedido ahora</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="section about-section" id="esencia">
+				<img class="about-splash" src="img/gotaizquierda.png" alt="" aria-hidden="true">
+				<img class="about-splash-right" src="img/gotaderecha.png" alt="" aria-hidden="true">
+
+				<div class="container about-grid">
+					<div class="about-copy">
+						<h2 class="section-title">Descubre el mejor café</h2>
+
+						<p>
+							En AROFE creemos que cada taza de café cuenta una historia.
+							Seleccionamos café de calidad para llevar hasta ti el aroma,
+							el sabor y la esencia de nuestras montañas santandereanas.
+							Ya sea en grano o molido, cada presentación está pensada para
+							que disfrutes una experiencia auténtica, desde el primer aroma
+							hasta el último sorbo. Porque un buen café no solo se toma,
+							se disfruta.
+						</p>
+
+						<a class="btn" href="#productos">
+							Conoce nuestros cafés
+						</a>
+					</div>
+
+					<div class="about-image">
+						<img src="img/pocillogranos.png" alt="Granos de café formando una taza">
+					</div>
+				</div>
+			</section>
+
+			<section class="section features" id="diferenciales">
+				<div class="container features-content">
+
+					<div class="features-head center">
+						<h2 class="section-title">¿Por qué somos diferentes?</h2>
+						<p class="section-lead">
+							No solo ofrecemos café, compartimos la pasión por cada taza.
+						</p>
+					</div>
+
+					<!-- Diferenciales de AROFE -->
+					<div class="feature-grid">
+						<article class="feature">
+							<img src="img/badge_1.png" alt="">
+							<h3>Alta calidad</h3>
+							<!-- <p>Cuidamos cada detalle para ofrecer una excelente taza.</p> -->
+							<p>Nuestro café fue certificado como:</p>
+							<strong>
+								<p> "Mejor Taza Tisquizoque 2026"</p>
+							</strong>
+						</article>
+
+						<article class="feature">
+							<img src="img/coffee-beans_1.png" alt="">
+							<h3>Granos selectos</h3>
+							<p>Calidad que se disfruta en cada sorbo.</p>
+						</article>
+
+						<article class="feature">
+							<img src="img/coffee-cup_1.png" alt="">
+							<h3>Perfiles extraordinarios</h3>
+							<p>Aromas y sabores que expresan el origen de cada café.</p>
+						</article>
+
+						<article class="feature">
+							<img src="img/best-price_1.png" alt="">
+							<h3>Precio asequible</h3>
+							<p>Calidad y variedad para disfrutar más.</p>
+						</article>
+					</div>
+
+					<!-- Historia fotográfica -->
+					<div class="process-head center">
+						<h3>De nuestras montañas a tu taza</h3>
+						<p>
+							Un recorrido por el origen, la selección y la experiencia AROFE.
+						</p>
+					</div>
+
+					<div class="process-grid">
+						<figure class="process-card">
+							<img src="img/1_montana.png" alt="Paisaje montañoso donde se cultiva el café AROFE"
+							loading="lazy">
+							<figcaption>
+								<strong>Nuestro origen</strong>
+								<span>Montañas que dan carácter a cada grano.</span>
+							</figcaption>
+						</figure>
+
+						<figure class="process-card">
+							<img src="img/2_recolectando.png" alt="Proceso de recolección del café" loading="lazy">
+							<figcaption>
+								<strong>Recolección</strong>
+								<span>Selección cuidadosa desde la cosecha.</span>
+							</figcaption>
+						</figure>
+
+						<figure class="process-card">
+							<img src="img/3_seleccionando.png" alt="Proceso de selección de los granos de café"
+							loading="lazy">
+							<figcaption>
+								<strong>Selección</strong>
+								<span>Calidad controlada antes de cada proceso.</span>
+							</figcaption>
+						</figure>
+
+						<figure class="process-card">
+							<img src="img/4_tomando.png" alt="Experiencia de disfrutar una taza de café AROFE"
+							loading="lazy">
+							<figcaption>
+								<strong>La experiencia AROFE</strong>
+								<span>El resultado final llega hasta tu taza.</span>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="feature-cta center">
+						<span>Las grandes ideas comienzan con un excelente café.</span>
+						<strong>Empieza hoy mismo.</strong>
+						<a class="btn" href="#productos">Pide tu café</a>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section products" id="productos">
+				<img class="products-splash-left" src="img/gotaizquierda.png" alt="" aria-hidden="true">
+				<img class="products-splash-right" src="img/gotaderecha.png" alt="" aria-hidden="true">
+				<div class="container products-container">
+					<div class="products-head center">
+						<h2 class="section-title">
+							Conoce nuestros orígenes y sabores
+						</h2>
+
+						<p class="section-lead">
+							Explora nuestros varietales santandereanos, cada uno con
+							notas y procesos únicos para tu taza ideal.
+						</p>
+					</div>
+
+					<div class="product-grid" id="productGrid"></div>
+				</div>
+			</section>
+
+			<section class="contact-area" id="contacto">
+
+				<div class="newsletter" id="noticias">
+					<div class="container">
+						<h2>Suscríbete para recibir las últimas noticias</h2>
+
+						<p>
+							No te pierdas novedades, consejos y ofertas especiales.
+						</p>
+
+						<form class="subscribe" id="subscribeForm">
+							<input type="email" id="subscribeEmail" placeholder="Introduce tu correo"
+							aria-label="Correo electrónico" required>
+
+							<button class="btn" type="submit">
+								Suscribir
+							</button>
+						</form>
+
+						<div class="form-message" id="subscribeMessage" aria-live="polite"></div>
+					</div>
+				</div>
+
+				<!-- Pocillos decorativos -->
+				<img
+				class="footer-cup footer-cup-left"
+				src="img/pocilloizquierdo.png"
+				alt=""
+				aria-hidden="true"
+				>
+
+				<img
+				class="footer-cup footer-cup-right"
+				src="img/pocilloderecho.png"
+				alt=""
+				aria-hidden="true"
+				>
+
+				<div class="footer-wrapper">
+
+    <img
+        class="footer-cup footer-cup-left"
+        src="img/pocilloizquierdo.png"
+        alt=""
+        aria-hidden="true"
+    >
+
+    <img
+        class="footer-cup footer-cup-right"
+        src="img/pocilloderecho.png"
+        alt=""
+        aria-hidden="true"
+    >
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+
+                <section class="footer-col">
+                    <div class="footer-brand">Arofe</div>
+
+                    <p class="footer-text">
+                        Cada grano tiene una esencia, cada taza una historia
+                        y cada momento una oportunidad para disfrutar.
+                    </p>
+
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Instagram">◎</a>
+                        <a href="#" aria-label="YouTube">▶</a>
+                        <a href="#" aria-label="X">𝕏</a>
+                    </div>
+                </section>
+
+                <section class="footer-col">
+                    <h3>Acerca de</h3>
+                    <a href="#productos">Productos</a>
+                    <a href="#diferenciales">Características</a>
+                    <a href="#noticias">Noticias</a>
+                    <a href="mailto:pedidos@arofecafe.com">Soporte</a>
+                </section>
+
+                <section class="footer-col">
+                    <h3>Compañía</h3>
+                    <a href="#esencia">Cómo trabajamos</a>
+                    <a href="#">Términos del servicio</a>
+                    <a href="#productos">Precios</a>
+                    <a href="#">Preguntas frecuentes</a>
+                </section>
+
+                <section class="footer-col">
+                    <h3>Contáctanos</h3>
+                    <p>Transversal 93 # 22D - 10</p>
+                    <a href="tel:+573219132692">321 913 2692</a>
+                    <a href="tel:+573143197222">314 319 7222</a>
+                    <a href="mailto:pedidos@arofecafe.com">
+                        pedidos@arofecafe.com
+                    </a>
+                    <a
+                        href="https://www.arofecafe.com"
+                        target="_blank"
+                        rel="noopener">
+                        www.arofecafe.com
+                    </a>
+                </section>
+
+            </div>
+
+            <div class="copyright">
+                © <span id="year"></span> AROFE Café.
+                Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+			</section>
+		</main>
+		<!-- <footer id="contacto">
+			<div class="container">
+				<div class="footer-grid">
+					<section class="footer-col">
+						<div class="footer-brand">Arofe</div>
+						<p class="footer-text">Cada grano tiene una esencia, cada taza una historia y cada momento una
+							oportunidad para disfrutar.</p>
+						<div class="socials">
+							<a href="#" aria-label="Facebook">f</a>
+							<a href="#" aria-label="Instagram">◎</a>
+							<a href="#" aria-label="YouTube">▶</a>
+							<a href="#" aria-label="X">𝕏</a>
+						</div>
+					</section>
+					<section class="footer-col">
+						<h3>Acerca de</h3>
+						<a href="#productos">Productos</a>
+						<a href="#diferenciales">Características</a>
+						<a href="#noticias">Noticias</a>
+						<a href="mailto:pedidos@arofecafe.com">Soporte</a>
+					</section>
+					<section class="footer-col">
+						<h3>Compañía</h3>
+						<a href="#esencia">Cómo trabajamos</a>
+						<a href="#">Términos del servicio</a>
+						<a href="#productos">Precios</a>
+						<a href="#">Preguntas frecuentes</a>
+					</section>
+					<section class="footer-col">
+						<h3>Contáctanos</h3>
+						<p>Transversal 93 # 22D - 10</p>
+						<a href="tel:+573219132692">321 913 2692</a>
+						<a href="tel:+573143197222">314 319 7222</a>
+						<a href="mailto:pedidos@arofecafe.com">pedidos@arofecafe.com</a>
+						<a href="https://www.arofecafe.com" target="_blank" rel="noopener">www.arofecafe.com</a>
+					</section>
+				</div>
+				<div class="copyright">© <span id="year" /> AROFE Café. Todos los derechos reservados.</div>
+			</div>
+		</footer> -->
+		<div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+			<div class="modal-card">
+				<button class="close-modal" aria-label="Cerrar">×</button>
+				<h2 id="loginTitle">Iniciar sesión</h2>
+				<p>Accede a tu cuenta para consultar tus pedidos.</p>
+				<form class="demo-form">
+					<div class="field">
+						<label for="loginEmail">Correo electrónico</label>
+						<input id="loginEmail" type="email" required>
+						<div>
+							<div class="field">
+								<label for="loginPassword">Contraseña</label>
+								<input id="loginPassword" type="password" required minlength="6" />
+								<button class="btn" type="submit">Ingresar</button>
+							</form>
+						</div>
+					</div>
+					<div class="modal" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle">
+						<div class="modal-card">
+							<button class="close-modal" aria-label="Cerrar">×</button>
+							<h2 id="registerTitle">Crear cuenta</h2>
+							<p>Regístrate para agilizar tus próximas compras.</p>
+							<form class="demo-form">
+								<div class="field">
+									<label for="registerName">Nombre completo</label>
+									<input id="registerName" required>
+									<div>
+										<div class="field">
+											<label for="registerEmail">Correo electrónico</label>
+											<input id="registerEmail" type="email" required>
+											<div>
+												<div class="field">
+													<label for="registerPassword">Contraseña</label>
+													<input id="registerPassword" type="password" required minlength="6" />
+													<button class="btn" type="submit">Registrarme</button>
+												</form>
+											</div>
+										</div>
+										<div class="toast" id="toast" role="status" aria-live="polite" />
+										<script>
+											const products = [
+												{ name: 'Castillo Gourmet', notes: 'Arándano, chocolate, naranja y miel', size: '500 g | 2.5 kg', price: '$38.000 | $170.000', img: 'Rectangle_7_1.png' },
+												{ name: 'Borbón Rosado', notes: 'Limoncillo, frutos rojos y vainilla', size: '250 g | 500 g', price: '$38.000 | $70.000', img: 'Rectangle_7_4.png' },
+												{ name: 'Geisha Honey', notes: 'Chocolate, frutos rojos y caramelo', size: '250 g | 500 g', price: '$46.000 | $86.000', img: 'Rectangle_7_5.png' },
+												{ name: 'Geisha Lavado', notes: 'Jazmín, bergamota y durazno', size: '250 g | 500 g', price: '$43.000 | $80.000', img: 'Rectangle_7_3.png' },
+												{ name: 'Castillo - Caturra Honey', notes: 'Panela, almendra y cacao', size: '250 g | 500 g', price: '$36.000 | $68.000', img: 'Rectangle_7_2.png' }];
+												const phone = '573219132692';
+												document.getElementById('productGrid').innerHTML = products.map(p => `<article class="product-card">
+																										<img src="img/${p.img}" alt="Café ${p.name}" loading="lazy">
+																											<div class="product-body">
+																												<h3>${p.name}</h3>
+																												<p class="notes">${p.notes}</p>
+																												<p class="size">${p.size}</p>
+																												<p class="price">${p.price}</p>
+																												<a class="btn btn-small" target="_blank" rel="noopener" href="https://wa.me/${phone}?text=${encodeURIComponent('Hola AROFE, quiero pedir el café ' + p.name)}">Pide tu café</a>
+																											</div>
+											</article>`).join('');
+												const header = document.getElementById('siteHeader'); addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 30));
+												const menuBtn = document.getElementById('menuBtn'), navLinks = document.getElementById('navLinks'), navActions = document.getElementById('navActions'); menuBtn.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); navActions.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open); menuBtn.textContent = open ? '×' : '☰' }); document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('open'); navActions.classList.remove('open'); menuBtn.textContent = '☰' }));
+												document.querySelectorAll('[data-modal]').forEach(b => b.addEventListener('click', () => document.getElementById(b.dataset.modal).classList.add('open'))); document.querySelectorAll('.modal').forEach(m => { m.querySelector('.close-modal').addEventListener('click', () => m.classList.remove('open')); m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open') }) }); addEventListener('keydown', e => { if (e.key === 'Escape') document.querySelectorAll('.modal.open').forEach(m => m.classList.remove('open')) });
+												let slide = 0; const slides = [...document.querySelectorAll('.testimonial')]; function showSlide(i) { slides[slide].classList.remove('active'); slide = (i + slides.length) % slides.length; slides[slide].classList.add('active') } document.querySelector('.prev').onclick = () => showSlide(slide - 1); document.querySelector('.next').onclick = () => showSlide(slide + 1);
+												const toast = document.getElementById('toast'); function notify(msg) { toast.textContent = msg; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3200) }
+												document.getElementById('subscribeForm').addEventListener('submit', e => { e.preventDefault(); const mail = document.getElementById('subscribeEmail'); document.getElementById('subscribeMessage').textContent = `Gracias. Registramos ${mail.value} para recibir novedades.`; e.target.reset() }); document.querySelectorAll('.demo-form').forEach(f => f.addEventListener('submit', e => { e.preventDefault(); e.target.closest('.modal').classList.remove('open'); notify('Formulario validado. Conecta este punto con tu API o servicio de autenticación.'); e.target.reset() }));
+												document.getElementById('year').textContent = new Date().getFullYear();
+												const sections = [...document.querySelectorAll('main section[id],footer[id]')], links = [...document.querySelectorAll('.nav-links a')]; const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id)) } }), { rootMargin: '-35% 0px -55%' }); sections.forEach(s => observer.observe(s));
+											</script>
+										</body>
+
+										</html>
